@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Button } from 'reactstrap';
+import Nav from './nav.js'
+
 
 function App() {
   return (
     <div className="App">
-      <button className='btn btn-primary'>Button</button>
 
+      <Nav ></Nav>
     </div>
   );
 }
