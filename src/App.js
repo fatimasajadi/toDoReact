@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import Nav from './nav.js'
+import Nav from './components/Nav.js';
+import NewTask from './components/NewTask.js';
 
 
 function App() {
   return (
     <div className="App">
-
-      <Nav ></Nav>
+      <Nav />
+      <NewTask />
     </div>
   );
 }
