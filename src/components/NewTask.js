@@ -20,7 +20,7 @@ function NewTask(props) {
           className="create-new-task-button"
           type="submit"
           onClick={() => {
-            props.onSubmit(value);
+            props.onSubmitTask(value);
             setValue('');
           }}
         >

@@ -2,19 +2,23 @@ import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
 import NewTask from './components/NewTask.js';
-import Task from './components/Task';
+import Tasks from './components/Tasks';
 
 
 function App() {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState([]);
 
   return (
     <>
       <div className="App">
         <Nav />
-        <NewTask onSubmit={setTask} />
+        <NewTask
+          onSubmitTask={(newTask) => {
+            setTask([...task, newTask])
+          }}
+        />
       </div>
-      <Task task={task} />
+      <Tasks task={task} />
     </>
   );
 }
