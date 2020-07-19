@@ -1,45 +1,46 @@
-    .new-task-container {
-        margin: auto;
-        position: relative;
-        background-color: white;
-        border-radius: 10px;
-        padding: 15px;
-    }
-    
-    .new-task-form {
-        max-width: 1000px;
-        width: 100%;
-        text-align: right;
-    }
-    
-    .new-task-text-area {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 10px;
-    }
-    
-    .new-task-textarea {
-        margin-top: 10px;
-        padding: 20px;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        max-width: 1000px;
-        outline: 0px none transparent;
-        border: none;
-        overflow: auto;
-        outline: none;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-    }
-    
-    .create-new-task-button {
-        font-family: 'Montserrat', sans-serif;
-        border-radius: 5px;
-        height: 40px;
-        width: 170px;
-        outline: none;
-        border-style: none;
-        background-color: #425195;
-        color: white;
-        font-weight: 500;
-    }
+.new-task-container {
+    margin: auto;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.new-task-form {
+    max-width: 1000px;
+    width: 100%;
+    text-align: right;
+}
+
+.new-task-text-area {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+.new-task-textarea {
+    margin-top: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    outline: 0px none transparent;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #00000020;
+}
+
+.create-new-task-button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
+    outline: none;
+    border-style: none;
+    background-color: #425195;
+    color: white;
+    font-weight: 500;
+}

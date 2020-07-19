@@ -1,0 +1,43 @@
+.task-container {
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    height: 80px;
+    margin-top: 10px;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    border-bottom: solid 2px #00000020;
+    border-radius: var(--borderRadius);
+}
+
+.icon {
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    padding: 4px;
+}
+
+.edit-trash {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.check-mark {
+    display: flex;
+    flex-direction: flex-end;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 0.7em;
+}
