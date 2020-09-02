@@ -27,7 +27,6 @@ function NewTask(props) {
           CREATE TASK
         </button>
       </form>
-
     </div>
   );
 }

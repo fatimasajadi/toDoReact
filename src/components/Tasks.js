@@ -4,11 +4,14 @@ import Task from "./Task.js";
 import "./Task.css";
 
 export default function Tasks(props) {
+
   return (
-    props.task.map((item) => {
+    props.tasks.map((item, index) => {
       return (
         <Task
+          key={index}
           task={item}
+          onclick={() => props.onDelete(index)}
         />
       )
     })

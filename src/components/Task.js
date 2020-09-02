@@ -2,6 +2,11 @@ import React from 'react';
 import './Task.css';
 
 function Task(props) {
+  function handleClick(e) {
+    e.preventDefault();
+    props.onclick();
+  }
+
   return (
     <>
       <div className="task-container">
@@ -12,7 +17,9 @@ function Task(props) {
           </div>
           <div className="edit-trash">
             <a className="fa fa-edit" href="#"></a>
-            <a className="fa fa-trash" href="#"></a>
+            <a className="fa fa-trash" href="#"
+              onClick={handleClick}
+            ></a>
           </div>
         </div>
       </div>

@@ -6,7 +6,11 @@ import Tasks from './components/Tasks';
 
 
 function App() {
-  const [task, setTask] = useState([]);
+  const [tasks, setTasks] = useState([]);
+
+  function onDelete(index) {
+    setTasks(tasks.filter((_, i) => i !== index));
+  }
 
   return (
     <>
@@ -14,11 +18,17 @@ function App() {
         <Nav />
         <NewTask
           onSubmitTask={(newTask) => {
-            setTask([...task, newTask])
+            setTasks([...tasks, newTask])
           }}
         />
       </div>
-      <Tasks task={task} />
+      <Tasks
+        tasks={tasks}
+        onSubmitTask={(newTask) => {
+          setTasks([...tasks, newTask])
+        }}
+        onDelete={onDelete}
+      />
     </>
   );
 }
